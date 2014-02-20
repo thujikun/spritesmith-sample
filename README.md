@@ -4,7 +4,7 @@ Sample of grunt-spritesmith
 [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith) is awesome grunt plugin for creating sprite image.  
 You can try it by cloning this repo.  
 
-1. git clone https://github.com/Ensighten/grunt-spritesmith.git  
+1. git clone https://github.com/thujikun/spritesmith-sample.git  
 or download zip
 2. npm install
 3. grunt
