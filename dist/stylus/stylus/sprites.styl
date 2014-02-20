@@ -1,0 +1,113 @@
+$bird_32_gray_x = 138px;
+$bird_32_gray_y = 0px;
+$bird_32_gray_offset_x = -138px;
+$bird_32_gray_offset_y = 0px;
+$bird_32_gray_width = 32px;
+$bird_32_gray_height = 32px;
+$bird_32_gray_total_width = 564px;
+$bird_32_gray_total_height = 110px;
+$bird_32_gray_image = '../image/spritesheet.png';
+$bird_32_gray = 138px 0px -138px 0px 32px 32px 564px 110px '../image/spritesheet.png';
+$bird_32_gray_fail_x = 185px;
+$bird_32_gray_fail_y = 0px;
+$bird_32_gray_fail_offset_x = -185px;
+$bird_32_gray_fail_offset_y = 0px;
+$bird_32_gray_fail_width = 32px;
+$bird_32_gray_fail_height = 32px;
+$bird_32_gray_fail_total_width = 564px;
+$bird_32_gray_fail_total_height = 110px;
+$bird_32_gray_fail_image = '../image/spritesheet.png';
+$bird_32_gray_fail = 185px 0px -185px 0px 32px 32px 564px 110px '../image/spritesheet.png';
+$checkbox_x = 329px;
+$checkbox_y = 0px;
+$checkbox_offset_x = -329px;
+$checkbox_offset_y = 0px;
+$checkbox_width = 110px;
+$checkbox_height = 110px;
+$checkbox_total_width = 564px;
+$checkbox_total_height = 110px;
+$checkbox_image = '../image/spritesheet.png';
+$checkbox = 329px 0px -329px 0px 110px 110px 564px 110px '../image/spritesheet.png';
+$done_x = 31px;
+$done_y = 0px;
+$done_offset_x = -31px;
+$done_offset_y = 0px;
+$done_width = 20px;
+$done_height = 20px;
+$done_total_width = 564px;
+$done_total_height = 110px;
+$done_image = '../image/spritesheet.png';
+$done = 31px 0px -31px 0px 20px 20px 564px 110px '../image/spritesheet.png';
+$radio_x = 454px;
+$radio_y = 0px;
+$radio_offset_x = -454px;
+$radio_offset_y = 0px;
+$radio_width = 110px;
+$radio_height = 110px;
+$radio_total_width = 564px;
+$radio_total_height = 110px;
+$radio_image = '../image/spritesheet.png';
+$radio = 454px 0px -454px 0px 110px 110px 564px 110px '../image/spritesheet.png';
+$ribbon_x = 232px;
+$ribbon_y = 0px;
+$ribbon_offset_x = -232px;
+$ribbon_offset_y = 0px;
+$ribbon_width = 82px;
+$ribbon_height = 82px;
+$ribbon_total_width = 564px;
+$ribbon_total_height = 110px;
+$ribbon_image = '../image/spritesheet.png';
+$ribbon = 232px 0px -232px 0px 82px 82px 564px 110px '../image/spritesheet.png';
+$rss_x = 101px;
+$rss_y = 0px;
+$rss_offset_x = -101px;
+$rss_offset_y = 0px;
+$rss_width = 22px;
+$rss_height = 22px;
+$rss_total_width = 564px;
+$rss_total_height = 110px;
+$rss_image = '../image/spritesheet.png';
+$rss = 101px 0px -101px 0px 22px 22px 564px 110px '../image/spritesheet.png';
+$search_x = 0px;
+$search_y = 0px;
+$search_offset_x = 0px;
+$search_offset_y = 0px;
+$search_width = 16px;
+$search_height = 16px;
+$search_total_width = 564px;
+$search_total_height = 110px;
+$search_image = '../image/spritesheet.png';
+$search = 0px 0px 0px 0px 16px 16px 564px 110px '../image/spritesheet.png';
+$todo_x = 66px;
+$todo_y = 0px;
+$todo_offset_x = -66px;
+$todo_offset_y = 0px;
+$todo_width = 20px;
+$todo_height = 20px;
+$todo_total_width = 564px;
+$todo_total_height = 110px;
+$todo_image = '../image/spritesheet.png';
+$todo = 66px 0px -66px 0px 20px 20px 564px 110px '../image/spritesheet.png';
+
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}

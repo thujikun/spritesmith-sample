@@ -1,0 +1,15 @@
+{
+  "name": "spritesmith-sample",
+  "version": "0.1.0",
+  "description": "grunt-spritesmithのsample",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/thujikun/spritesmith-sample.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-spritesmith": "~1.22.0",
+    "load-grunt-tasks": "~0.3.0"
+  }
+}

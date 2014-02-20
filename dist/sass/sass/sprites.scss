@@ -1,0 +1,116 @@
+  $bird_32_gray-x: 0px;
+  $bird_32_gray-y: 98px;
+  $bird_32_gray-offset-x: 0px;
+  $bird_32_gray-offset-y: -98px;
+  $bird_32_gray-width: 32px;
+  $bird_32_gray-height: 32px;
+  $bird_32_gray-total-width: 110px;
+  $bird_32_gray-total-height: 484px;
+  $bird_32_gray-image: '../image/spritesheet.png';
+  $bird_32_gray: 0px 98px 0px -98px 32px 32px 110px 484px '../image/spritesheet.png';
+  $bird_32_gray_fail-x: 0px;
+  $bird_32_gray_fail-y: 135px;
+  $bird_32_gray_fail-offset-x: 0px;
+  $bird_32_gray_fail-offset-y: -135px;
+  $bird_32_gray_fail-width: 32px;
+  $bird_32_gray_fail-height: 32px;
+  $bird_32_gray_fail-total-width: 110px;
+  $bird_32_gray_fail-total-height: 484px;
+  $bird_32_gray_fail-image: '../image/spritesheet.png';
+  $bird_32_gray_fail: 0px 135px 0px -135px 32px 32px 110px 484px '../image/spritesheet.png';
+  $checkbox-x: 0px;
+  $checkbox-y: 259px;
+  $checkbox-offset-x: 0px;
+  $checkbox-offset-y: -259px;
+  $checkbox-width: 110px;
+  $checkbox-height: 110px;
+  $checkbox-total-width: 110px;
+  $checkbox-total-height: 484px;
+  $checkbox-image: '../image/spritesheet.png';
+  $checkbox: 0px 259px 0px -259px 110px 110px 110px 484px '../image/spritesheet.png';
+  $done-x: 0px;
+  $done-y: 21px;
+  $done-offset-x: 0px;
+  $done-offset-y: -21px;
+  $done-width: 20px;
+  $done-height: 20px;
+  $done-total-width: 110px;
+  $done-total-height: 484px;
+  $done-image: '../image/spritesheet.png';
+  $done: 0px 21px 0px -21px 20px 20px 110px 484px '../image/spritesheet.png';
+  $radio-x: 0px;
+  $radio-y: 374px;
+  $radio-offset-x: 0px;
+  $radio-offset-y: -374px;
+  $radio-width: 110px;
+  $radio-height: 110px;
+  $radio-total-width: 110px;
+  $radio-total-height: 484px;
+  $radio-image: '../image/spritesheet.png';
+  $radio: 0px 374px 0px -374px 110px 110px 110px 484px '../image/spritesheet.png';
+  $ribbon-x: 0px;
+  $ribbon-y: 172px;
+  $ribbon-offset-x: 0px;
+  $ribbon-offset-y: -172px;
+  $ribbon-width: 82px;
+  $ribbon-height: 82px;
+  $ribbon-total-width: 110px;
+  $ribbon-total-height: 484px;
+  $ribbon-image: '../image/spritesheet.png';
+  $ribbon: 0px 172px 0px -172px 82px 82px 110px 484px '../image/spritesheet.png';
+  $rss-x: 0px;
+  $rss-y: 71px;
+  $rss-offset-x: 0px;
+  $rss-offset-y: -71px;
+  $rss-width: 22px;
+  $rss-height: 22px;
+  $rss-total-width: 110px;
+  $rss-total-height: 484px;
+  $rss-image: '../image/spritesheet.png';
+  $rss: 0px 71px 0px -71px 22px 22px 110px 484px '../image/spritesheet.png';
+  $search-x: 0px;
+  $search-y: 0px;
+  $search-offset-x: 0px;
+  $search-offset-y: 0px;
+  $search-width: 16px;
+  $search-height: 16px;
+  $search-total-width: 110px;
+  $search-total-height: 484px;
+  $search-image: '../image/spritesheet.png';
+  $search: 0px 0px 0px 0px 16px 16px 110px 484px '../image/spritesheet.png';
+  $todo-x: 0px;
+  $todo-y: 46px;
+  $todo-offset-x: 0px;
+  $todo-offset-y: -46px;
+  $todo-width: 20px;
+  $todo-height: 20px;
+  $todo-total-width: 110px;
+  $todo-total-height: 484px;
+  $todo-image: '../image/spritesheet.png';
+  $todo: 0px 46px 0px -46px 20px 20px 110px 484px '../image/spritesheet.png';
+
+  @mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+    @include sprite-image($sprite);
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }
